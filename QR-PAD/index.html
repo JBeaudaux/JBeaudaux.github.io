@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="shortcut icon" type="image/png" href="img/schillerIcon.png" />
+  <link rel="shortcut icon" type="image/png" href="img/schillerIcon.png" />
   <title>Schiller FRED PA-1 : Now everybody can save lives</title>
+  <meta charset="UTF-8">
 </head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="css/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <style>
@@ -29,8 +30,8 @@
       <li class="w3-dropdown-hover w3-right">
         <a href="#" class="w3-hover-white" title="Languages"> <img src="img/flags/English.png" style="width:50px"></a>
         <div class="w3-dropdown-content w3-white w3-card-4" align="left">
-          <a href="index.html"><img src="img/flags/English.png" style="width:50px"> English</a>
-          <a href="indexFR.html"><img src="img/flags/France.png" style="width:50px"> Francais</a>
+          <a href="index.html"><img src="img/flags/English.png" style="width:50px"></a>
+          <a href="indexFR.html"><img src="img/flags/France.png" style="width:50px"></a>
           <!-- <a href="indexFR.html"><img src="img/flags/Ukraine.png" style="width:50px"> &#x0401;</a> -->
         </div>
       </li>
@@ -183,20 +184,20 @@
     <center><span class="w3-xlarge w3-bottombar w3-border-red w3-padding-hor-6">Contact us</span> </center>
   </div>
 
-  <form>
+  <form action="MAILTO:julienbeaudaux@gmail.com" method="post" enctype="text/plain">
     <div class="w3-group">
       <label>Name</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text">
-    </div>
-    <div class="w3-group">
-      <label>Name</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text">
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="name">
     </div>
     <div class="w3-group">
       <label>Subject</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;">
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="subject" value="FRED PA-1 : Additional infos.">
     </div>
-    <button type="button" class="w3-btn w3-btn-block w3-padding-hor-12">Send</button>
+    <div class="w3-group">
+      <label>Comment</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Content" size="50">
+    </div>
+    <button type="submit" class="w3-btn w3-btn-block w3-padding-hor-12">Send</button>
   </form>
 
 </div>
@@ -232,7 +233,7 @@ function showDivs(n) {
   for (i = 0; i < dots.length; i++) {
      dots[i].className = dots[i].className.replace(" w3-white", "");
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " w3-white";
 }
 </script>
