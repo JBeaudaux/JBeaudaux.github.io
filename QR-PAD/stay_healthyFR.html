@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" type="image/png" href="img/schillerIcon.png" />
+	<title>Schiller FRED PA-1 : Chain of survival</title>
+  <meta charset="UTF-8">
+</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <ul class="w3-navbar w3-left-align w3-light-grey w3-center w3-large">
+      <li class="w3-left" style="width:300px !important"> <a href="http://www.schiller.ch"> <img src="img/logoSchiller.png" style="height:100%" /> </a></li>
+      <li style="width:15% !important" ><a href="indexFR.html" class="w3-text-red" style="padding-top:15px"><i class="fa fa-home"></i><b>Accueil</b></a></li>
+      <!--<li class="w3-hide-small w3-hide-medium" style="width:15% !important"><a href="#About" style="padding-top:15px"><b>About</b></a></li>
+      <li class="w3-hide-small w3-hide-medium" style="width:15% !important"><a href="#Contact" style="padding-top:15px"><b>Contact</b></a></li>-->
+
+      <li class="w3-dropdown-hover w3-right">
+        <a href="#" class="w3-hover-white" title="Languages"> <img src="img/flags/English.png" style="width:50px"></a>
+        <div class="w3-dropdown-content w3-white w3-card-4" align="left">
+          <a href="index.html"><img src="img/flags/English.png" style="width:50px"></a>
+          <a href="indexFR.html"><img src="img/flags/France.png" style="width:50px"></a>
+          <!-- <a href="indexFR.html"><img src="img/flags/Ukraine.png" style="width:50px"> &#x0401;</a> -->
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <a name="Top">
+
+  <div class="w3-row-padding w3-padding-hor-64 w3-container" style="padding-top:1000px">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Strenghthen your heart, one day at a time</h1>
+        <h5 align="justify">A healthy body often starts with a healthy lifestyle. Your diet, exercise, smoking and alcohol consumption affect the state of your heart, and thus your risk of heart failure.</h5>
+        <h5 align="justify"> This section provides you with further information on how each of these lifestyle factors affect your health, and what changes you should try to make to reduce their impact on your heart.</h5>
+      </div>
+      <div class="w3-third w3-center">
+        <img src="img/healthy/lifestyle.jpg" style="width:100%; padding-top:30px">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-light-grey w3-padding-hor-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <img src="img/healthy/hearthealthyfoods.jpg" style="width:80%">
+      </div>
+
+      <div class="w3-twothird">
+        <h1>An apple a day keeps the doctor away</h1>
+        <h5 align="justify">We are what we eat, and a proper diet is often key to improving your heart and reducing its failure risk. Although you may consider your current diet to be fairly healthy, you may be required to reduce key elements of it, such as salt, fat and alcohol. You may be referred to a dietician who will work with you to develop a personalised diet to improve the way you feel and help control your heart failure.</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-hor-64 w3-container" style="padding-top:100px">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Activity and exercise</h1>
+        <h5 align="justify">Any mild physical activity is beneficial for the majority of people with heart failure. Exercise can help you feel better in general. Activity may improve the functioning of your heart, by reducing the workload and enabling it to beat more efficiently. This will improve your symptoms.</h5>
+        <h5 align="justify">A good rule of thumb is that you should still be able to talk while you are exercising. If you are not able to talk, you are probably overdoing it. Stop exercising at once if you experience shortness of breath, dizziness, chest pain, nausea or a cold sweat. If the symptoms persist, contact your doctor or nurse.</h5>
+      </div>
+      <div class="w3-third w3-center">
+        <img src="img/healthy/run.jpg" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+ 
+<!-- Footer -->
+<footer class="w3-container w3-padding-hor-32 w3-light-grey w3-center">
+  <!--<h4>Footer</h4> -->
+  <p>Powered by Julien Beaudaux for Schiller Medical SAS</p>
+</footer>
+
+<script>
+// Slideshow script
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
