@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
 </head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -16,14 +16,16 @@
   <!-- Navbar -->
   <div class="w3-top">
     <ul class="w3-navbar w3-left-align w3-light-grey w3-center w3-large">
-      <li class="w3-left" style="width:300px !important"> <a href="http://www.schiller.ch"> <img src="img/logoSchiller.png" style="height:100%" /> </a></li>
+      <li class="w3-left w3-hide-micro"> <a href="http://www.schiller.ch"> <img src="img/logoSchiller.png"/> </a></li>
+      <li class="w3-left w3-show-micro"> <a href="http://www.schiller.ch"> <img src="img/logoSchillerMicro.png"/> </a></li>
+      
       <li style="width:15% !important" ><a href="indexFR.html" class="w3-text-red" style="padding-top:15px"><i class="fa fa-home"></i><b>Accueil</b></a></li>
       <!--<li class="w3-hide-small w3-hide-medium" style="width:15% !important"><a href="#About" style="padding-top:15px"><b>About</b></a></li>
       <li class="w3-hide-small w3-hide-medium" style="width:15% !important"><a href="#Contact" style="padding-top:15px"><b>Contact</b></a></li>-->
 
-      <li class="w3-dropdown-hover w3-right">
-        <a href="#" class="w3-hover-white" title="Languages"> <img src="img/flags/France.png" style="width:50px"></a>
-        <div class="w3-dropdown-content w3-white w3-card-4" align="left">
+      <li class="w3-dropdown-hover w3-right" style="width:90px!important">
+        <a class="w3-hover-white" title="Languages"> <img src="img/flags/France.png" style="max-width:50px"></a>
+        <div class="w3-dropdown-content w3-white w3-card-4" align="left" style="right:0px; min-width:0px">
           <a href="index.html"><img src="img/flags/English.png" style="width:50px"></a>
           <a href="indexFR.html"><img src="img/flags/France.png" style="width:50px"></a>
           <!-- <a href="indexFR.html"><img src="img/flags/Ukraine.png" style="width:50px"> &#x0401;</a> -->

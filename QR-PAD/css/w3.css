@@ -104,7 +104,7 @@ img.w3-image,.w3-image img{max-width:100%;height:auto}
 .w3-select select:focus{color:#000;border:1px solid #009688}.w3-select option[disabled]{color:#009688}
 .w3-dropdown-click,.w3-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
 .w3-dropdown-hover:hover .w3-dropdown-content{display:block;z-index:1}
-.w3-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0}
+.w3-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;}
 .w3-dropdown-content a{padding:6px 16px;display:block}
 .w3-dropdown-content a:hover{background-color:#ccc}
 .w3-accordion {width:100%;cursor:pointer}
@@ -165,6 +165,10 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 @media (min-width:993px){.w3-modal-content{width:900px}}
 @media screen and (max-width:600px){.w3-topnav a{display:block}.w3-navbar li:not(.w3-opennav){width:20%!important}}
 @media screen and (max-width:600px){.w3-topnav,.w3-navbar{text-align:center}}
+<<<<<<< HEAD
+=======
+@media (min-width:470px){.w3-show-micro{display:none!important}}
+>>>>>>> Responsive menus
 @media (max-width:470px){.w3-hide-micro{display:none!important}}
 @media (max-width:600px){.w3-hide-small{display:none!important}}
 @media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
