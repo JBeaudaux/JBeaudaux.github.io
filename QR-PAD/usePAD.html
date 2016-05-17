@@ -202,11 +202,11 @@
   </div>
 
   <div class="w3-center" style="margin-top:10px">
-    <button class="w3-btn demo" onclick="currentDiv(2)">1</button>
-    <button class="w3-btn demo" onclick="currentDiv(3)">2</button>
-    <button class="w3-btn demo" onclick="currentDiv(4)">3</button>
-    <button class="w3-btn demo" onclick="currentDiv(5)">4</button>
-    <button class="w3-btn demo" onclick="currentDiv(6)">5</button>
+    <button class="w3-btn demoindex" onclick="currentDiv(2)">1</button>
+    <button class="w3-btn demoindex" onclick="currentDiv(3)">2</button>
+    <button class="w3-btn demoindex" onclick="currentDiv(4)">3</button>
+    <button class="w3-btn demoindex" onclick="currentDiv(5)">4</button>
+    <button class="w3-btn demoindex" onclick="currentDiv(6)">5</button>
     <!--<button class="w3-btn demo" onclick="currentDiv(7)">7</button>-->
   </div>
 
@@ -235,17 +235,25 @@ function currentDiv(n) {
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demodots");
+  //var dots = document.getElementsByClassName("demodots");
+  var index = document.getElementsByClassName("demoindex");
+
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
+  x[slideIndex-1].style.display = "block";
+
+  /*for (i = 0; i < dots.length; i++) {
      dots[i].className = dots[i].className.replace(" w3-white", "");
   }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
+  dots[slideIndex-1].className += " w3-white";*/
+
+  for (i = 0; i < index.length; i++) {
+     index[i].className = index[i].className.replace(" w3-red", "");
+  }
+  if(slideIndex>=2) {index[slideIndex-2].className += " w3-red";}
 }
 </script>
 
