@@ -1,63 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <link rel="shortcut icon" type="image/png" href="img/schillerIcon.png" />
-	<title>Schiller FRED PA-1 : Now everybody can save lives</title>
+  <link rel="shortcut icon" type="image/png" href="img/schillerIcon.png" />
+	<title>Julien Beaudaux</title>
+  <meta charset="UTF-8">
 </head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/myStyle.css">
 	<style>
 		html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif}
 		.mySlides {display:none}
 		.w3-left, .w3-right, .w3-tag {cursor:pointer}
 		.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+    #left {
+      overflow: auto;
+      left: 0;
+      width: 149px;
+      border-right: 10px solid #000;
+      position: relative;
+    }
+    #right {
+      position: fixed;
+      top:0;
+      margin-left: 200px;
+      height: 100%;
+      float:left;
+    }
 	</style>
 
 
 <body>
 
-	<ul class="w3-navbar w3-left-align w3-light-grey w3-center w3-top w3-large">
-		<li class="w3-left" style="width:33.3% !important"><a href="javascript:void(0)" class="w3-text-red">Home</a></li>
-		<li class="w3-left" style="width:33.3% !important"><a href="javascript:void(0)">About</a></li>
-		<li class="w3-left" style="width:33.3% !important"><a href="javascript:void(0)">Contact</a></li>
-	</ul>
+  <!-- Personal infos bar -->
+  <!--<div class="w3-top">
+    <div class="w3-row">
+      <div class="w3-col l3 m6 w3-light-grey w3-padding-large">
+        <center>
+          <img src="img/10minutes.png" />
+          <h3>Learn to save lives</h3>
+          <p align="justify">Did you know that the victim of a heart attack can die in 10 minutes without any help and intervention?</p>
+          <p align="justify">Learn more about how to use a defibrillator, perform heart massage, and save lives in time.</p>
+        </center>
+      </div>
 
-	<div class="w3-content w3-container" style="max-width:1100px;margin-top:30px;margin-bottom:500px">
-		<div class="w3-section">
-		<!--<h1><b>MARKETING</b></h1>
-		<p>Template by w3.css</p>
-		<img src="img/logoSchiller.png" width="300" height="58" />
-		<p>Schiller FRED PA-1 : Now everybody can save lives</p>-->
-		<img src="img/AED.png" style="width:100%" />    
-		<center><span class="w3-xlarge w3-bottombar w3-border-red w3-padding-hor-6">Schiller FRED PA-1</span></center>
-	</div>
+      <div class="w3-col l3 m6 w3-light-grey w3-padding-large">
+        <center>
+          <img src="img/10minutes.png" />
+          <h3>Learn to save lives</h3>
+          <p align="justify">Did you know that the victim of a heart attack can die in 10 minutes without any help and intervention?</p>
+          <p align="justify">Learn more about how to use a defibrillator, perform heart massage, and save lives in time.</p>
+        </center>
+      </div>
+
+      <div class="w3-col l3 m6 w3-light-grey w3-padding-large">
+        <center>
+          <img src="img/10minutes.png" />
+          <h3>Learn to save lives</h3>
+          <p align="justify">Did you know that the victim of a heart attack can die in 10 minutes without any help and intervention?</p>
+          <p align="justify">Learn more about how to use a defibrillator, perform heart massage, and save lives in time.</p>
+        </center>
+      </div>
+    </div>
+  </div>-->
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <ul class="w3-navbar w3-left-align w3-light-grey w3-center w3-large" style="border-bottom: 1px solid red;">
+      <li class="w3-left" style="width:33% !important"> <h2 style="padding-top:15px"><b>Julien Beaudaux</b></h2> </li>
+      
+      <li class="w3-center" style="width:33% !important"> <img src="img/jul.png" style="width:100px; padding-top:15px; padding-bottom:15px"/> </li>
+
+      <li class="w3-right" style="width:33% !important">
+        <div style="padding-right:30px" align="right"> julienbeaudaux@gmail.com <i class="fa fa-envelope w3-text-red"></i> </div>
+        <div style="padding-right:30px" align="right"> (+33) 06.75.98.14.24 <i class="fa fa-phone w3-text-red"></i> </div>
+        <div style="padding-right:30px" align="right"> Strasbourg, France <i class="fa fa-map-marker w3-text-red"></i> </div>
+        <div style="padding-right:30px" align="right"> JBeaudaux <i class="fa fa-github w3-text-red"></i> <i class="fa fa-linkedin-square w3-text-red"></i> </div>
+      </li>
+    </ul>
+  </div>
+  
+  <!--<div class="w3-top w3-light-grey">
+    <div id="container">
+      <div>sdvsd</div>
+      <div>photo</div>
+      <div>
+        <div align="right">julienbeaudaux@gmail.com <i class="fa fa-envelope w3-text-red"></i></div>
+        <div align="right">+33 675 981 424 <i class="fa fa-phone w3-text-red"></i></div>
+        <div align="right">Strasbourg, France <i class="fa fa-map-marker w3-text-red"></i></div>
+        <div align="right">JBeaudaux <i class="fa fa-github w3-text-red"></i> <i class="fa fa-linkedin-square w3-text-red"></i></div>
+      </div>
+    </div>
+  </div>-->
+
+
+	<div class="w3-content w3-container" style="max-width:1100px;margin-top:120px;margin-bottom:500px">
+
 
 
 	<div class="w3-row">
-		<div class="w3-col l3 m6 w3-light-grey w3-padding-large">
-			<center>
-				<img src="img/10minutes.png" />
-				<h3>Learn to save lives</h3>
+		<div class="w3-col l2 m6 w3-light-grey w3-padding-large">
+				<h2><b>Work experiences</b></h2>
+
+
+
+
+
 				<p align="justify">Did you know that the victim of a heart attack can die in 10 minutes without any help and intervention?</p>
 				<p align="justify">Learn more about how to use a defibrillator, perform heart massage, and save lives in time.</p>
-			</center>
 		</div>
 
-		<div class="w3-col l3 m6 w3-grey w3-padding-large">
-			<h3>Branding</h3>
+		<div class="w3-col l2 m6 w3-grey w3-padding-large">
+			<h2><b>Competences</b></h2>
+      <h3>Technical skills</h3>
 			<p align="justify">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
 		</div>
 
-		<div class="w3-col l3 m6 w3-dark-grey w3-padding-large">
-			<h3>Consultation</h3>
-			<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-		</div>
-
-		<div class="w3-col l3 m6 w3-black w3-padding-large">
-			<h3>Promises</h3>
-			<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-		</div>
 	</div>
 
 	<div class="w3-row-padding" style="margin:0 -16px">
